@@ -17,6 +17,7 @@ class ArticleController extends Controller
     }
 
     public function detail($id) {
-        return "Detail - $id";
+        $data = Article::find($id);
+        return view('articles.detail', ['article' => $data]);
     }
 }
