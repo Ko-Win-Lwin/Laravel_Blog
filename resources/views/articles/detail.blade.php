@@ -10,7 +10,7 @@
             </div>
 
             <p class="card-text"> {{ $article->body }} </p>
-            <a href='{{ url("/articles/delete/$article-id") }}' class="btn btn-warning">
+            <a href='{{ url("/articles/delete/$article->id") }}' class="btn btn-warning">
                 Delete
             </a>
         </div>
